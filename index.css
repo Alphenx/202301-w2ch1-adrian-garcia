@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+.main-container {
+  display: flex;
+}
+
+.card-container {
+  display: flex;
+  max-width: 500px;
+}
+
+.card-container h2 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.card-container p {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card-container button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+@media (max-width: 1440px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+}
