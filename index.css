@@ -15,13 +15,17 @@ font-family: 'Lexend Deca', sans-serif; */
   display: flex;
   margin: 0 auto;
   gap: 1rem;
-  padding: 2.5rem;
+  padding: 3rem 3rem;
   flex-wrap: wrap;
+}
+
+.card-container__img-container img {
+  width: 8rem;
 }
 
 .card-container__sedans {
   background-color: hsl(31, 77%, 52%);
-  border-radius: 0.5rem 0 0 0.5rem;
+  border-radius: 1rem 0 0 1rem;
 }
 
 .card-container__sedans button {
@@ -40,21 +44,42 @@ font-family: 'Lexend Deca', sans-serif; */
   background-color: hsl(184, 100%, 22%);
 }
 .card-container__luxury {
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0 1rem 1rem 0;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card-container__sedans button:hover {
+  border: solid 1px white;
+  color: white;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-container__suvs button:hover {
+  border: solid 1px white;
+  color: white;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-container__luxury button:hover {
+  border: solid 1px white;
+  color: white;
   background-color: hsl(179, 100%, 13%);
 }
 
 .card-container h2 {
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 4rem;
   width: 100%;
+  margin: 1rem 0;
 }
 
 .card-container p {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
+  font-size: 1.2rem;
   line-height: 2rem;
+  margin-bottom: 2rem;
 }
 
 .card-container button {
@@ -66,16 +91,6 @@ font-family: 'Lexend Deca', sans-serif; */
   padding: 1.5rem;
 }
 
-@media (max-width: 1440px) {
-  .main-container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  .card-container {
-    flex-direction: column;
-  }
-}
-
 @media (max-width: 446px) {
   .main-container {
     display: flex;
@@ -83,7 +98,7 @@ font-family: 'Lexend Deca', sans-serif; */
   }
 
   .card-container__sedans {
-    border-radius: 0.5rem 0.5rem 0 0;
+    border-radius: 1rem 1rem 0 0;
   }
 
   .card-container__suvs {
@@ -91,6 +106,6 @@ font-family: 'Lexend Deca', sans-serif; */
   }
 
   .card-container__luxury {
-    border-radius: 0 0 0.5rem 0.5rem;
+    border-radius: 0 0 1rem 1rem;
   }
 }
